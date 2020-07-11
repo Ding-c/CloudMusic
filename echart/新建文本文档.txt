@@ -1,0 +1,8 @@
+坐标线：axisLine
+刻度：axisTick
+周一周二这些文字叫做：axisLabel
+网格线：spliteLine
+
+文本样式：textStyle
+线条样式：lineStyle
+图片样式：itemStyle

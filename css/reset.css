@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    resize: none;
+    -webkit-tap-highlight-color: transparent;
+    /* 消除移动端点击时候的高亮色 */
+    list-style: none;/*序列前面没有点*/
+   /* box-sizing: content-box;  加入padding盒子会变大*/
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+}
+

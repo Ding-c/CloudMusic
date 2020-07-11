@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    resize: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    background: url(../image/bg.jpg) no-repeat top center;
+    overflow: hidden;
+}
+
+.main{
+    max-width: 1920px;
+    min-width: 1024px;
+    display: flex;
+    margin: auto;
+}
+.main .colum{
+    flex: 3;
+    margin: 0.625rem;
+}
+
+.main .colum:nth-child(2)
+{
+    flex: 5;
+}
+.panel{
+    height: 12.916667rem;
+    width: 100%;
+    margin-bottom: .625rem;
+    background: url(../image/line.png) rgba(255,255,255,0.1);
+}
+
+.panel-map{
+    height: 26.458333rem;
+}

@@ -1,0 +1,108 @@
+﻿.top{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* 唱片指针 */
+.needle{
+    width: 84px;
+    height: 122px;
+    background:url(/image/needle-ip6.png) ;
+    background-size: cover;
+    position: absolute;
+    z-index: 1005;
+    left: 50%;
+}
+/* 歌曲唱片和专辑图片 */
+.song-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.disc{
+    width: 70%;
+    padding-top: 70%;
+    background: url(/image/disc.png);
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+    background-size: cover;
+    position: relative;
+}
+.song-img{
+    width: 63%;
+    height: 63%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.song-img>img{
+    width: 100%;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 995;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    filter: blur(18px) brightness(0.55);
+}
+.bg>img{
+    height: 150%;
+    position: relative;
+    top: -30px;
+}
+/* 歌词效果 */
+.song-lyric{
+    margin-top: 25px;
+}
+.song-lyric>h2{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 15px;
+}
+.song-lyric>p{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+.rang-container{
+    width: 70%;
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 转盘动画 */
+@keyframes an{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+
+}
+.roll{
+    animation: an 20s infinite;
+}
+/* 给定旋转的状态判断
+    播放状态
+*/
+.playing{
+    animation-play-state: running;
+}
+/* 暂停状态 */
+.paused{
+    animation-play-state: paused;
+}
